@@ -1,6 +1,6 @@
-from similarity import calculate_similarity
+from src.similarity import calculate_similarity
 import numpy as np
-from embeddings import get_embedding
+from src.embeddings import get_embedding
 
 def get_context(prompt, chunks_from_file):
     embedding_prompt = get_embedding(prompt)

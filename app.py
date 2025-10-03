@@ -19,7 +19,7 @@ if pdf_file and user_question:
     extracted_text_from_file = extract_text_from_pdf(pdf_file)
 
     # 2. Chunk text
-    chunks_from_file = chunk_text(extracted_text_from_file, 3)
+    chunks_from_file = chunk_text(extracted_text_from_file, 5)
 
     # 3. Get context string
     context = get_context(user_question, chunks_from_file)

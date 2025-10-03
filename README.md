@@ -14,6 +14,18 @@ Upload a PDF, ask natural language questions, and get AI-generated answers using
 
 ---
 
+## 🔑 Environment Variables
+
+This project requires an OpenAI API key.
+
+1. Create a file named `.env` in the project root.
+2. Add the following line (replace with your own API key):
+*OPENAI_API_KEY=your_api_key_here*
+
+3. The app will automatically load the key from this file.
+
+---
+
 ## 🚀 How to Run
 
 1. Clone the repo:
@@ -34,27 +46,22 @@ Upload a PDF, ask natural language questions, and get AI-generated answers using
    pip install -r requirements.txt
    ```
 
-4. Run the app:
+4. Download NLTK data (only needed once):
+
+   ```python
+   import nltk
+   nltk.download('punkt')
+
+
+5. Run the app:
    ```bash
    streamlit run app.py
    ```
 
 ---
 
-## 🔑 Environment Variables
-
-This project requires an OpenAI API key.
-
-1. Create a file named `.env` in the project root.
-2. Add the following line (replace with your own API key):
-*OPENAI_API_KEY=your_api_key_here*
-
-3. The app will automatically load the key from this file.
-
----
-
 ## 📷 Screenshot
-*(Add a screenshot of your Streamlit UI here)*
+![Image](image-1.png)
 
 ---
 
